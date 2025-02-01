@@ -1,0 +1,68 @@
+/* p{
+    color: red;
+}
+
+.demo-text{
+    color: blue !important;
+}
+
+.demo-text{
+    color: red !important;
+}
+#demo-text1{
+    color: green;
+}
+
+#demo-text{
+    color:brown;
+}  
+*{
+    color: red;
+} 
+
+p,h3{
+    background-color: green;
+}
+p{
+    background-color: green;
+}
+h3{
+    background-color: green;
+} */
+
+/* Combinator Selector*/
+/* div p{
+    background-color: yellowgreen;
+} */
+
+/* div > p{
+    background-color: red;
+} */
+
+/* Adjacent sibling Selector */
+/* div + p{
+    color: red;
+} */
+/* Adjacent sibling Selector */
+/* div ~ p{
+    color: red; 
+}
+
+a:hover{
+    text-decoration: none;
+} */
+/* .pseudo-p::before{
+    content: "Hello ";
+} */
+
+p[class="demo"]{
+    background-color: purple;
+}
+
+p[title~="flower"]{
+    background-color: blue;
+}
+
+p[title|="demo"]{
+    background-color: green;
+}
