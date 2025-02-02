@@ -1,3 +1,6 @@
-p{
-    color:blue;
+/* External CSS: Defined in a separate file linked to the HTML */
+
+/* Target all <p> elements and set their text color to blue */
+p {
+    color: blue;
 }

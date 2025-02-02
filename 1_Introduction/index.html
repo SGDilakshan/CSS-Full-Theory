@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1_Introduction to CSS</title>
-    <style>
-        body{
-            background-color: black;
 
+    <!-- Internal CSS: Defined within the <style> tag inside the <head> -->
+    <style>
+        /* Internal CSS */
+        body {
+            background-color: black; /* Sets the background color of the whole page to black */
         }
-        p{
-            color: white;
+
+        p {
+            color: white; /* Sets the text color of all <p> elements to white */
         }
     </style>
+
+    <!-- External CSS: Linking to an external style.css file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p style="color:yellow">Lorem ipsum dolor sit amet.</p>
+
+    <!-- Inline CSS: Directly applied to the <p> element using the style attribute -->
+    <p style="color:yellow">Lorem ipsum dolor sit amet.</p> <!-- This text will be yellow due to inline CSS -->
+
 </body>
 </html>
