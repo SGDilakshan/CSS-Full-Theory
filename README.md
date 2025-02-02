@@ -29,22 +29,19 @@ CSS can be applied in three ways:
 - **ID > class**: ID selectors have higher specificity than class selectors.  
 
 
-### - Combinator Selectors  
-
+### Combinator Selectors  
 - **Descendant Selector (`div p`)**: Selects all `p` elements inside `div`.  
 - **Child Selector (`div > p`)**: Selects direct children of a `div`.  
 - **Adjacent Sibling Selector (`div + p`)**: Selects the first `p` immediately following `div`.  
 - **General Sibling Selector (`div ~ p`)**: Selects all `p` siblings of `div`.  
 
-### 04 - Pseudo Selectors and Elements  
-
+### Pseudo Selectors and Elements  
 - **`:hover`**: Applied when an element is hovered over by the user.  
 - **`::before`**: Inserts content before an element’s actual content.  
 - **`::after`**: Inserts content after an element’s actual content.  
 - **`:focus`**: Applied when an element (like a form input) is focused on.  
 
-### 05 - Attribute Selectors  
-
+### Attribute Selectors  
 - **`p[class="demo"]`**: Selects `p` elements with the class "demo".  
 - **`p[title~="flower"]`**: Selects `p` elements whose `title` attribute contains "flower".  
 - **`p[title|="demo"]`**: Selects `p` elements whose `title` attribute starts with "demo".  
@@ -52,15 +49,22 @@ CSS can be applied in three ways:
 - **`p[class$="mo"]`**: Selects `p` elements whose class ends with "mo".  
 - **`p[class*="em"]`**: Selects `p` elements whose class contains "em".  
 
-### 06 - CSS Comments  
-
+### CSS Comments  
 - Use comments to make your code more readable and to leave notes for future reference.  
 - **Syntax**: `/* Your comment here */`.  
 
-### 07 - Better Comments Extension  
-
+### Better Comments Extension  
 - **Purpose**: Helps in structuring comments with labels like `TODO`, `FIXME`, `NOTE`, and others to improve readability and manageability of your codebase.  
 
 ------------------------------------------------------------------------
+
+3_CSS Box Model & Layout
+
+Contents
+padding
+border
+outline
+margin 
+
 
 Stay tuned for more CSS topics!

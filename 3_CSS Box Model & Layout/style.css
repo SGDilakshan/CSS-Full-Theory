@@ -1,0 +1,13 @@
+.box-model{
+    background-color: yellow;
+    width: 100px;
+    margin-right: 120px;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+/* p{
+    background-color: red;
+} */
