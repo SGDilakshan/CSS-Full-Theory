@@ -1,68 +1,96 @@
-/* p{
-    color: red;
+/* Basic styling for paragraph elements */
+p {
+    color: red; /* Sets text color to red for all paragraphs */
 }
 
-.demo-text{
-    color: blue !important;
+/* Class selector example: .demo-text */
+.demo-text {
+    color: blue !important; /* This overrides other styles due to !important */
 }
 
-.demo-text{
-    color: red !important;
-}
-#demo-text1{
-    color: green;
+/* ID selector example: #demo-text */
+#demo-text {
+    color: brown; /* Sets the color for element with id 'demo-text' */
 }
 
-#demo-text{
-    color:brown;
-}  
-*{
-    color: red;
-} 
-
-p,h3{
-    background-color: green;
-}
-p{
-    background-color: green;
-}
-h3{
-    background-color: green;
-} */
-
-/* Combinator Selector*/
-/* div p{
-    background-color: yellowgreen;
-} */
-
-/* div > p{
-    background-color: red;
-} */
-
-/* Adjacent sibling Selector */
-/* div + p{
-    color: red;
-} */
-/* Adjacent sibling Selector */
-/* div ~ p{
-    color: red; 
+/* Universal selector for all elements */
+* {
+    color: red; /* This sets text color to red for all elements */
 }
 
-a:hover{
-    text-decoration: none;
-} */
-/* .pseudo-p::before{
-    content: "Hello ";
-} */
-
-p[class="demo"]{
-    background-color: purple;
+/* Grouping selectors to apply the same style */
+p, h3 {
+    background-color: green; /* Applies green background to all <p> and <h3> */
 }
 
-p[title~="flower"]{
-    background-color: blue;
+/* Combinator Selectors */
+
+/* Descendant selector: selects all <p> inside a <div> */
+div p {
+    background-color: yellowgreen; /* Sets background color to yellowgreen */
 }
 
-p[title|="demo"]{
-    background-color: green;
+/* Child selector: selects direct child <p> inside <div> */
+div > p {
+    background-color: red; /* Sets background color to red */
 }
+
+/* Adjacent sibling selector: selects <p> immediately following <div> */
+div + p {
+    color: red; /* Sets text color to red */
+}
+
+/* General sibling selector: selects all <p> siblings after a <div> */
+div ~ p {
+    color: red; /* Sets text color to red */
+}
+
+/* Pseudo-class for hover effect on <a> link */
+a:hover {
+    text-decoration: none; /* Removes underline from link when hovered */
+}
+
+/* Pseudo-elements to add content before the element */
+.pseudo-p::before {
+    content: "Hello "; /* Adds "Hello " before the content of .pseudo-p */
+}
+
+/* Attribute selectors */
+
+/* Selects paragraphs with class "demo" */
+p[class="demo"] {
+    background-color: purple; /* Sets background color to purple */
+}
+
+/* Selects paragraphs where the title attribute contains "flower" */
+p[title~="flower"] {
+    background-color: blue; /* Sets background color to blue */
+}
+
+/* Selects paragraphs where the title starts with "demo" */
+p[title|="demo"] {
+    background-color: green; /* Sets background color to green */
+}
+
+/* Selects paragraphs where class starts with "de" */
+p[class^="de"] {
+    background-color: yellow; /* Sets background color to yellow */
+}
+
+/* Selects paragraphs where class ends with "mo" */
+p[class$="mo"] {
+    background-color: red; /* Sets background color to red */
+}
+
+/* Selects paragraphs where class contains "em" */
+p[class*="em"] {
+    background-color: pink; /* Sets background color to pink */
+}
+
+/* Adding comments in CSS */
+
+/* 
+  This is a multi-line comment example.
+  It can be used to add longer explanations or temporarily disable code.
+*/
+
